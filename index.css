@@ -97,6 +97,7 @@ body {
 
 .product-info {
     margin-top: 10px;
+    max-width: 200px;
 }
 
 .product-info>div {

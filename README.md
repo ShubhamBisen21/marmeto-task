@@ -1,4 +1,4 @@
-# GitHub Documentation for Dynamic Product Gallery
+# Task Assignment For Marmeto(FrontEnd Intern) By Shubham Bisen
 
 ## Overview
 

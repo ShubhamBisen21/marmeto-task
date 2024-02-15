@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.category-selection {
+    width: 100%;
+    text-align: center;
+}
+
+.tab-bar {
+    margin: 0 10px;
+}
+
+.tab-bar button {
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    width: 250px;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.tab-bar button.active {
+    background-color: black;
+    color: white;
+}
+
+.icon-men::before,
+.icon-women::before,
+.icon-kids::before {
+    margin-right: 8px;
+}
+
+.icon-men::before {
+    content: "\1F455";
+    /* T-shirt Unicode */
+}
+
+.icon-women::before {
+    content: "\1F457";
+    /* Dress Unicode */
+}
+
+.icon-kids::before {
+    content: "\1F6B6";
+    /* Walking Person Unicode */
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    text-align: center;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product img {
+    height: 240px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+    object-position: top;
+}
+
+.add-to-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+    width: 200px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: start;
+    gap: 10px;
+}
+
+.product-title {
+    font-size: medium;
+    font-weight: 600;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-vendor {
+    font-size: smaller;
+}
+
+.dot-separator {
+    display: inline-block;
+    margin: 0 8px;
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 50%;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.product-compare-at-price {
+    font-size: small;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #8F8F8F;
+
+}
+
+.product-discount {
+    color: #ff0000;
+    font-weight: 600;
+    font-size: small;
+}
+
+.product-price {
+    color: #000000;
+    font-weight: 600;
+    font-size: small;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 10px;
+    z-index: 10;
+    display: inline-block;
+    font-size: 0.8em;
+    border-radius: 2px;
+}
+
+@media (max-width: 600px) {
+    .tab-bar button {
+        flex-grow: 1;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 200px;
+    }
+}
